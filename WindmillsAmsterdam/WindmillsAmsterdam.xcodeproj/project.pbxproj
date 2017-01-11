@@ -556,8 +556,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MyWonderfulApps.-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8407bb20-7b1b-4b6b-857d-a27beecdbb6c";
-				PROVISIONING_PROFILE_SPECIFIER = "AmsterdamWindmills-Adhoc";
+				PROVISIONING_PROFILE = "62f01ad6-a2b2-4d01-955e-34020a249dcc";
+				PROVISIONING_PROFILE_SPECIFIER = "AmsterdamWindmills-Appstore";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

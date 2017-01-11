@@ -5,11 +5,12 @@ fastlane documentation
 sudo gem install fastlane
 ```
 # Available Actions
-### beta
+## iOS
+### ios release
 ```
-fastlane beta
+fastlane ios release
 ```
-
+Deploy a new version to the App Store
 
 ----
 
