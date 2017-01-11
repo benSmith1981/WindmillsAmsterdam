@@ -13,15 +13,14 @@ default_platform :ios
 # Fastfile actions accept additional configuration, but
 # don't worry, fastlane will prompt you for required
 # info which you can add here later
-lane :beta do
-  increment_build_number
-  # build your iOS app
-  gym(
-    scheme: "WindmillsAmsterdam"
-  )
 
-  # upload to HockeyApp
-  hockey(
-    api_token: "121421023f064634864dba507cbd6b9c"
-  )
-end
+  desc "Deploy a new version to the App Store"
+  lane :release do
+    # match(type: "appstore")
+    # snapshot
+    gym(scheme: "WindmillsAmsterdam") # Build your app - more options available
+    deliver(force: true)
+    # frameit
+  end
+  
+end 
