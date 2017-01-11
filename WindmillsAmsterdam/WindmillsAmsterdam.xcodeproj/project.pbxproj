@@ -16,6 +16,7 @@
 		BE8AA61B1E265B28003118C2 /* WindmillsAmsterdamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AA61A1E265B28003118C2 /* WindmillsAmsterdamUITests.swift */; };
 		BE8AA62C1E265DFF003118C2 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8AA62A1E265DFF003118C2 /* HockeySDK.framework */; };
 		BE8AA62D1E265DFF003118C2 /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE8AA62B1E265DFF003118C2 /* HockeySDKResources.bundle */; };
+		BE8AA6301E26C7FF003118C2 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AA62E1E26C7FF003118C2 /* SnapshotHelper.swift */; };
 		F3B408B47B1966BCC6451FF2 /* Pods_WindmillsAmsterdam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4EB76713F9CB65D40E432C /* Pods_WindmillsAmsterdam.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		BE8AA61C1E265B28003118C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE8AA62A1E265DFF003118C2 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
 		BE8AA62B1E265DFF003118C2 /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
+		BE8AA62E1E26C7FF003118C2 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		CE1F8117699CC9268ED640C2 /* Pods-WindmillsAmsterdam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindmillsAmsterdam.release.xcconfig"; path = "Pods/Target Support Files/Pods-WindmillsAmsterdam/Pods-WindmillsAmsterdam.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +151,7 @@
 		BE8AA6191E265B28003118C2 /* WindmillsAmsterdamUITests */ = {
 			isa = PBXGroup;
 			children = (
+				BE8AA62E1E26C7FF003118C2 /* SnapshotHelper.swift */,
 				BE8AA61A1E265B28003118C2 /* WindmillsAmsterdamUITests.swift */,
 				BE8AA61C1E265B28003118C2 /* Info.plist */,
 			);
@@ -384,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE8AA61B1E265B28003118C2 /* WindmillsAmsterdamUITests.swift in Sources */,
+				BE8AA6301E26C7FF003118C2 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
