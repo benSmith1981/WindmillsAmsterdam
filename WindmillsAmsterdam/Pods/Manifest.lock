@@ -1,0 +1,18 @@
+PODS:
+  - Firebase (2.4.2)
+  - GoogleMaps (1.10.5)
+  - HockeySDK (3.8.5):
+    - HockeySDK/AllFeaturesLib (= 3.8.5)
+  - HockeySDK/AllFeaturesLib (3.8.5)
+
+DEPENDENCIES:
+  - Firebase
+  - GoogleMaps
+  - HockeySDK
+
+SPEC CHECKSUMS:
+  Firebase: 5e898ed5012c81d28ca5fae1113c6b61a172bc6d
+  GoogleMaps: da51c62c338c2d9c47cdad470a0d1e0e4b8544e4
+  HockeySDK: dd11a2b9da3372fd025643bee5bc10c8c613d169
+
+COCOAPODS: 0.39.0

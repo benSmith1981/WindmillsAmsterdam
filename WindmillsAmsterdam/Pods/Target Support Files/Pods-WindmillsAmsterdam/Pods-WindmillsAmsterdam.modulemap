@@ -1,0 +1,6 @@
+framework module Pods_WindmillsAmsterdam {
+  umbrella header "Pods-WindmillsAmsterdam-umbrella.h"
+
+  export *
+  module * { export * }
+}
