@@ -6,7 +6,6 @@ use_frameworks!
 target 'WindmillsAmsterdam' do
 	pod 'Firebase'
 	pod 'GoogleMaps'
-    pod 'HockeySDK'
 end
 
 target 'WindmillsAmsterdamTests' do

@@ -1,1181 +1,658 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>1E4EB76713F9CB65D40E432C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_WindmillsAmsterdam.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>42C536B4630DD75CC8596A41</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>70CE6551A66EC058816F1D96</string>
-				<string>CE1F8117699CC9268ED640C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4E8E0B4F422C9542D6AC1B42</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1E4EB76713F9CB65D40E432C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>70CE6551A66EC058816F1D96</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-WindmillsAmsterdam.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-WindmillsAmsterdam/Pods-WindmillsAmsterdam.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A759F0EB4F95AA491572EC89</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>B2BA75F7492267352AEC349A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-WindmillsAmsterdam/Pods-WindmillsAmsterdam-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>BE8AA5EE1E265B28003118C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BE8AA5F91E265B28003118C2</string>
-				<string>BE8AA60E1E265B28003118C2</string>
-				<string>BE8AA6191E265B28003118C2</string>
-				<string>BE8AA5F81E265B28003118C2</string>
-				<string>42C536B4630DD75CC8596A41</string>
-				<string>4E8E0B4F422C9542D6AC1B42</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE8AA5EF1E265B28003118C2</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0800</string>
-				<key>LastUpgradeCheck</key>
-				<string>0800</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Ben Smith</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>BE8AA5F61E265B28003118C2</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.0</string>
-						<key>DevelopmentTeam</key>
-						<string>CWK29L7ZPT</string>
-						<key>ProvisioningStyle</key>
-						<string>Manual</string>
-					</dict>
-					<key>BE8AA60A1E265B28003118C2</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.0</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-						<key>TestTargetID</key>
-						<string>BE8AA5F61E265B28003118C2</string>
-					</dict>
-					<key>BE8AA6151E265B28003118C2</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.0</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-						<key>TestTargetID</key>
-						<string>BE8AA5F61E265B28003118C2</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>BE8AA5F21E265B28003118C2</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>BE8AA5EE1E265B28003118C2</string>
-			<key>productRefGroup</key>
-			<string>BE8AA5F81E265B28003118C2</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>BE8AA5F61E265B28003118C2</string>
-				<string>BE8AA60A1E265B28003118C2</string>
-				<string>BE8AA6151E265B28003118C2</string>
-			</array>
-		</dict>
-		<key>BE8AA5F21E265B28003118C2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>BE8AA61D1E265B28003118C2</string>
-				<string>BE8AA61E1E265B28003118C2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>BE8AA5F31E265B28003118C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BE8AA5FD1E265B28003118C2</string>
-				<string>BE8AA5FB1E265B28003118C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BE8AA5F41E265B28003118C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>F3B408B47B1966BCC6451FF2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BE8AA5F51E265B28003118C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BE8AA6051E265B28003118C2</string>
-				<string>BE8AA6021E265B28003118C2</string>
-				<string>BE8AA6001E265B28003118C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BE8AA5F61E265B28003118C2</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>BE8AA61F1E265B28003118C2</string>
-			<key>buildPhases</key>
-			<array>
-				<string>A759F0EB4F95AA491572EC89</string>
-				<string>BE8AA5F31E265B28003118C2</string>
-				<string>BE8AA5F41E265B28003118C2</string>
-				<string>BE8AA5F51E265B28003118C2</string>
-				<string>B2BA75F7492267352AEC349A</string>
-				<string>BEE234B2B10812184C3C4B77</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>WindmillsAmsterdam</string>
-			<key>productName</key>
-			<string>WindmillsAmsterdam</string>
-			<key>productReference</key>
-			<string>BE8AA5F71E265B28003118C2</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>BE8AA5F71E265B28003118C2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>WindmillsAmsterdam.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>BE8AA5F81E265B28003118C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BE8AA5F71E265B28003118C2</string>
-				<string>BE8AA60B1E265B28003118C2</string>
-				<string>BE8AA6161E265B28003118C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE8AA5F91E265B28003118C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BE8AA5FA1E265B28003118C2</string>
-				<string>BE8AA5FC1E265B28003118C2</string>
-				<string>BE8AA5FE1E265B28003118C2</string>
-				<string>BE8AA6011E265B28003118C2</string>
-				<string>BE8AA6031E265B28003118C2</string>
-				<string>BE8AA6061E265B28003118C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>WindmillsAmsterdam</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE8AA5FA1E265B28003118C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE8AA5FB1E265B28003118C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE8AA5FA1E265B28003118C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE8AA5FC1E265B28003118C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE8AA5FD1E265B28003118C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE8AA5FC1E265B28003118C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE8AA5FE1E265B28003118C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BE8AA5FF1E265B28003118C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE8AA5FF1E265B28003118C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE8AA6001E265B28003118C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE8AA5FE1E265B28003118C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE8AA6011E265B28003118C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE8AA6021E265B28003118C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE8AA6011E265B28003118C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE8AA6031E265B28003118C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BE8AA6041E265B28003118C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE8AA6041E265B28003118C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE8AA6051E265B28003118C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE8AA6031E265B28003118C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE8AA6061E265B28003118C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE8AA6071E265B28003118C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BE8AA6101E265B28003118C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BE8AA6081E265B28003118C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BE8AA6091E265B28003118C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BE8AA60A1E265B28003118C2</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>BE8AA6221E265B28003118C2</string>
-			<key>buildPhases</key>
-			<array>
-				<string>BE8AA6071E265B28003118C2</string>
-				<string>BE8AA6081E265B28003118C2</string>
-				<string>BE8AA6091E265B28003118C2</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>BE8AA60D1E265B28003118C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>WindmillsAmsterdamTests</string>
-			<key>productName</key>
-			<string>WindmillsAmsterdamTests</string>
-			<key>productReference</key>
-			<string>BE8AA60B1E265B28003118C2</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>BE8AA60B1E265B28003118C2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>WindmillsAmsterdamTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>BE8AA60C1E265B28003118C2</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>BE8AA5EF1E265B28003118C2</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>BE8AA5F61E265B28003118C2</string>
-			<key>remoteInfo</key>
-			<string>WindmillsAmsterdam</string>
-		</dict>
-		<key>BE8AA60D1E265B28003118C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>BE8AA5F61E265B28003118C2</string>
-			<key>targetProxy</key>
-			<string>BE8AA60C1E265B28003118C2</string>
-		</dict>
-		<key>BE8AA60E1E265B28003118C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BE8AA60F1E265B28003118C2</string>
-				<string>BE8AA6111E265B28003118C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>WindmillsAmsterdamTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE8AA60F1E265B28003118C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>WindmillsAmsterdamTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE8AA6101E265B28003118C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE8AA60F1E265B28003118C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE8AA6111E265B28003118C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE8AA6121E265B28003118C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BE8AA61B1E265B28003118C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BE8AA6131E265B28003118C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BE8AA6141E265B28003118C2</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BE8AA6151E265B28003118C2</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>BE8AA6251E265B28003118C2</string>
-			<key>buildPhases</key>
-			<array>
-				<string>BE8AA6121E265B28003118C2</string>
-				<string>BE8AA6131E265B28003118C2</string>
-				<string>BE8AA6141E265B28003118C2</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>BE8AA6181E265B28003118C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>WindmillsAmsterdamUITests</string>
-			<key>productName</key>
-			<string>WindmillsAmsterdamUITests</string>
-			<key>productReference</key>
-			<string>BE8AA6161E265B28003118C2</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>BE8AA6161E265B28003118C2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>WindmillsAmsterdamUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>BE8AA6171E265B28003118C2</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>BE8AA5EF1E265B28003118C2</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>BE8AA5F61E265B28003118C2</string>
-			<key>remoteInfo</key>
-			<string>WindmillsAmsterdam</string>
-		</dict>
-		<key>BE8AA6181E265B28003118C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>BE8AA5F61E265B28003118C2</string>
-			<key>targetProxy</key>
-			<string>BE8AA6171E265B28003118C2</string>
-		</dict>
-		<key>BE8AA6191E265B28003118C2</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BE8AA61A1E265B28003118C2</string>
-				<string>BE8AA61C1E265B28003118C2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>WindmillsAmsterdamUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE8AA61A1E265B28003118C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>WindmillsAmsterdamUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE8AA61B1E265B28003118C2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BE8AA61A1E265B28003118C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE8AA61C1E265B28003118C2</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE8AA61D1E265B28003118C2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_ACTIVE_COMPILATION_CONDITIONS</key>
-				<string>DEBUG</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>BE8AA61E1E265B28003118C2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Owholemodule</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>BE8AA61F1E265B28003118C2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>BE8AA6201E265B28003118C2</string>
-				<string>BE8AA6211E265B28003118C2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>BE8AA6201E265B28003118C2</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>70CE6551A66EC058816F1D96</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>CWK29L7ZPT</string>
-				<key>INFOPLIST_FILE</key>
-				<string>WindmillsAmsterdam/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.MyWonderfulApps.-</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string>0feb466d-5963-45de-947b-5e3729a936eb</string>
-				<key>PROVISIONING_PROFILE_SPECIFIER</key>
-				<string>AmsterdamWindmillsDEV</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>BE8AA6211E265B28003118C2</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>CE1F8117699CC9268ED640C2</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Distribution</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>CWK29L7ZPT</string>
-				<key>INFOPLIST_FILE</key>
-				<string>WindmillsAmsterdam/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.MyWonderfulApps.-</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string>3084ad38-cc43-466c-8fbb-7f66d0d06fa5</string>
-				<key>PROVISIONING_PROFILE_SPECIFIER</key>
-				<string>AmsterdamWindmills</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>BE8AA6221E265B28003118C2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>BE8AA6231E265B28003118C2</string>
-				<string>BE8AA6241E265B28003118C2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>BE8AA6231E265B28003118C2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>WindmillsAmsterdamTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>test.WindmillsAmsterdamTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/WindmillsAmsterdam.app/WindmillsAmsterdam</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>BE8AA6241E265B28003118C2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>WindmillsAmsterdamTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>test.WindmillsAmsterdamTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/WindmillsAmsterdam.app/WindmillsAmsterdam</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>BE8AA6251E265B28003118C2</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>BE8AA6261E265B28003118C2</string>
-				<string>BE8AA6271E265B28003118C2</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>BE8AA6261E265B28003118C2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>WindmillsAmsterdamUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>test.WindmillsAmsterdamUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>WindmillsAmsterdam</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>BE8AA6271E265B28003118C2</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>WindmillsAmsterdamUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>test.WindmillsAmsterdamUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>WindmillsAmsterdam</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>BEE234B2B10812184C3C4B77</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-WindmillsAmsterdam/Pods-WindmillsAmsterdam-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>CE1F8117699CC9268ED640C2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-WindmillsAmsterdam.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-WindmillsAmsterdam/Pods-WindmillsAmsterdam.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F3B408B47B1966BCC6451FF2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1E4EB76713F9CB65D40E432C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>BE8AA5EF1E265B28003118C2</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE8AA5FB1E265B28003118C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AA5FA1E265B28003118C2 /* AppDelegate.swift */; };
+		BE8AA5FD1E265B28003118C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AA5FC1E265B28003118C2 /* ViewController.swift */; };
+		BE8AA6001E265B28003118C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8AA5FE1E265B28003118C2 /* Main.storyboard */; };
+		BE8AA6021E265B28003118C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE8AA6011E265B28003118C2 /* Assets.xcassets */; };
+		BE8AA6051E265B28003118C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8AA6031E265B28003118C2 /* LaunchScreen.storyboard */; };
+		BE8AA6101E265B28003118C2 /* WindmillsAmsterdamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AA60F1E265B28003118C2 /* WindmillsAmsterdamTests.swift */; };
+		BE8AA61B1E265B28003118C2 /* WindmillsAmsterdamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AA61A1E265B28003118C2 /* WindmillsAmsterdamUITests.swift */; };
+		BE8AA62C1E265DFF003118C2 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8AA62A1E265DFF003118C2 /* HockeySDK.framework */; };
+		BE8AA62D1E265DFF003118C2 /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE8AA62B1E265DFF003118C2 /* HockeySDKResources.bundle */; };
+		F3B408B47B1966BCC6451FF2 /* Pods_WindmillsAmsterdam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4EB76713F9CB65D40E432C /* Pods_WindmillsAmsterdam.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE8AA60C1E265B28003118C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE8AA5EF1E265B28003118C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE8AA5F61E265B28003118C2;
+			remoteInfo = WindmillsAmsterdam;
+		};
+		BE8AA6171E265B28003118C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE8AA5EF1E265B28003118C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE8AA5F61E265B28003118C2;
+			remoteInfo = WindmillsAmsterdam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E4EB76713F9CB65D40E432C /* Pods_WindmillsAmsterdam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WindmillsAmsterdam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70CE6551A66EC058816F1D96 /* Pods-WindmillsAmsterdam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindmillsAmsterdam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WindmillsAmsterdam/Pods-WindmillsAmsterdam.debug.xcconfig"; sourceTree = "<group>"; };
+		BE8AA5F71E265B28003118C2 /* WindmillsAmsterdam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WindmillsAmsterdam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE8AA5FA1E265B28003118C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE8AA5FC1E265B28003118C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE8AA5FF1E265B28003118C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE8AA6011E265B28003118C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE8AA6041E265B28003118C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE8AA6061E265B28003118C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE8AA60B1E265B28003118C2 /* WindmillsAmsterdamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WindmillsAmsterdamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE8AA60F1E265B28003118C2 /* WindmillsAmsterdamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindmillsAmsterdamTests.swift; sourceTree = "<group>"; };
+		BE8AA6111E265B28003118C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE8AA6161E265B28003118C2 /* WindmillsAmsterdamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WindmillsAmsterdamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE8AA61A1E265B28003118C2 /* WindmillsAmsterdamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindmillsAmsterdamUITests.swift; sourceTree = "<group>"; };
+		BE8AA61C1E265B28003118C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE8AA62A1E265DFF003118C2 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
+		BE8AA62B1E265DFF003118C2 /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
+		CE1F8117699CC9268ED640C2 /* Pods-WindmillsAmsterdam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindmillsAmsterdam.release.xcconfig"; path = "Pods/Target Support Files/Pods-WindmillsAmsterdam/Pods-WindmillsAmsterdam.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE8AA5F41E265B28003118C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8AA62C1E265DFF003118C2 /* HockeySDK.framework in Frameworks */,
+				F3B408B47B1966BCC6451FF2 /* Pods_WindmillsAmsterdam.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8AA6081E265B28003118C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8AA6131E265B28003118C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42C536B4630DD75CC8596A41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70CE6551A66EC058816F1D96 /* Pods-WindmillsAmsterdam.debug.xcconfig */,
+				CE1F8117699CC9268ED640C2 /* Pods-WindmillsAmsterdam.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4E8E0B4F422C9542D6AC1B42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE8AA6291E265DFF003118C2 /* HockeySDK.embeddedframework */,
+				1E4EB76713F9CB65D40E432C /* Pods_WindmillsAmsterdam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE8AA5EE1E265B28003118C2 = {
+			isa = PBXGroup;
+			children = (
+				BE8AA5F91E265B28003118C2 /* WindmillsAmsterdam */,
+				BE8AA60E1E265B28003118C2 /* WindmillsAmsterdamTests */,
+				BE8AA6191E265B28003118C2 /* WindmillsAmsterdamUITests */,
+				BE8AA5F81E265B28003118C2 /* Products */,
+				42C536B4630DD75CC8596A41 /* Pods */,
+				4E8E0B4F422C9542D6AC1B42 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE8AA5F81E265B28003118C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE8AA5F71E265B28003118C2 /* WindmillsAmsterdam.app */,
+				BE8AA60B1E265B28003118C2 /* WindmillsAmsterdamTests.xctest */,
+				BE8AA6161E265B28003118C2 /* WindmillsAmsterdamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE8AA5F91E265B28003118C2 /* WindmillsAmsterdam */ = {
+			isa = PBXGroup;
+			children = (
+				BE8AA5FA1E265B28003118C2 /* AppDelegate.swift */,
+				BE8AA5FC1E265B28003118C2 /* ViewController.swift */,
+				BE8AA5FE1E265B28003118C2 /* Main.storyboard */,
+				BE8AA6011E265B28003118C2 /* Assets.xcassets */,
+				BE8AA6031E265B28003118C2 /* LaunchScreen.storyboard */,
+				BE8AA6061E265B28003118C2 /* Info.plist */,
+			);
+			path = WindmillsAmsterdam;
+			sourceTree = "<group>";
+		};
+		BE8AA60E1E265B28003118C2 /* WindmillsAmsterdamTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE8AA60F1E265B28003118C2 /* WindmillsAmsterdamTests.swift */,
+				BE8AA6111E265B28003118C2 /* Info.plist */,
+			);
+			path = WindmillsAmsterdamTests;
+			sourceTree = "<group>";
+		};
+		BE8AA6191E265B28003118C2 /* WindmillsAmsterdamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BE8AA61A1E265B28003118C2 /* WindmillsAmsterdamUITests.swift */,
+				BE8AA61C1E265B28003118C2 /* Info.plist */,
+			);
+			path = WindmillsAmsterdamUITests;
+			sourceTree = "<group>";
+		};
+		BE8AA6291E265DFF003118C2 /* HockeySDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				BE8AA62A1E265DFF003118C2 /* HockeySDK.framework */,
+				BE8AA62B1E265DFF003118C2 /* HockeySDKResources.bundle */,
+			);
+			name = HockeySDK.embeddedframework;
+			path = "HockeySDK-iOS/HockeySDK.embeddedframework";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE8AA5F61E265B28003118C2 /* WindmillsAmsterdam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE8AA61F1E265B28003118C2 /* Build configuration list for PBXNativeTarget "WindmillsAmsterdam" */;
+			buildPhases = (
+				A759F0EB4F95AA491572EC89 /* Check Pods Manifest.lock */,
+				BE8AA5F31E265B28003118C2 /* Sources */,
+				BE8AA5F41E265B28003118C2 /* Frameworks */,
+				BE8AA5F51E265B28003118C2 /* Resources */,
+				B2BA75F7492267352AEC349A /* Embed Pods Frameworks */,
+				BEE234B2B10812184C3C4B77 /* Copy Pods Resources */,
+				BE8AA6281E265C76003118C2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WindmillsAmsterdam;
+			productName = WindmillsAmsterdam;
+			productReference = BE8AA5F71E265B28003118C2 /* WindmillsAmsterdam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE8AA60A1E265B28003118C2 /* WindmillsAmsterdamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE8AA6221E265B28003118C2 /* Build configuration list for PBXNativeTarget "WindmillsAmsterdamTests" */;
+			buildPhases = (
+				BE8AA6071E265B28003118C2 /* Sources */,
+				BE8AA6081E265B28003118C2 /* Frameworks */,
+				BE8AA6091E265B28003118C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE8AA60D1E265B28003118C2 /* PBXTargetDependency */,
+			);
+			name = WindmillsAmsterdamTests;
+			productName = WindmillsAmsterdamTests;
+			productReference = BE8AA60B1E265B28003118C2 /* WindmillsAmsterdamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE8AA6151E265B28003118C2 /* WindmillsAmsterdamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE8AA6251E265B28003118C2 /* Build configuration list for PBXNativeTarget "WindmillsAmsterdamUITests" */;
+			buildPhases = (
+				BE8AA6121E265B28003118C2 /* Sources */,
+				BE8AA6131E265B28003118C2 /* Frameworks */,
+				BE8AA6141E265B28003118C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE8AA6181E265B28003118C2 /* PBXTargetDependency */,
+			);
+			name = WindmillsAmsterdamUITests;
+			productName = WindmillsAmsterdamUITests;
+			productReference = BE8AA6161E265B28003118C2 /* WindmillsAmsterdamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE8AA5EF1E265B28003118C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Ben Smith";
+				TargetAttributes = {
+					BE8AA5F61E265B28003118C2 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = CWK29L7ZPT;
+						ProvisioningStyle = Manual;
+					};
+					BE8AA60A1E265B28003118C2 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BE8AA5F61E265B28003118C2;
+					};
+					BE8AA6151E265B28003118C2 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BE8AA5F61E265B28003118C2;
+					};
+				};
+			};
+			buildConfigurationList = BE8AA5F21E265B28003118C2 /* Build configuration list for PBXProject "WindmillsAmsterdam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE8AA5EE1E265B28003118C2;
+			productRefGroup = BE8AA5F81E265B28003118C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE8AA5F61E265B28003118C2 /* WindmillsAmsterdam */,
+				BE8AA60A1E265B28003118C2 /* WindmillsAmsterdamTests */,
+				BE8AA6151E265B28003118C2 /* WindmillsAmsterdamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE8AA5F51E265B28003118C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8AA6051E265B28003118C2 /* LaunchScreen.storyboard in Resources */,
+				BE8AA62D1E265DFF003118C2 /* HockeySDKResources.bundle in Resources */,
+				BE8AA6021E265B28003118C2 /* Assets.xcassets in Resources */,
+				BE8AA6001E265B28003118C2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8AA6091E265B28003118C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8AA6141E265B28003118C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A759F0EB4F95AA491572EC89 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B2BA75F7492267352AEC349A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WindmillsAmsterdam/Pods-WindmillsAmsterdam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE8AA6281E265C76003118C2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+		};
+		BEE234B2B10812184C3C4B77 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WindmillsAmsterdam/Pods-WindmillsAmsterdam-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE8AA5F31E265B28003118C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8AA5FD1E265B28003118C2 /* ViewController.swift in Sources */,
+				BE8AA5FB1E265B28003118C2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8AA6071E265B28003118C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8AA6101E265B28003118C2 /* WindmillsAmsterdamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8AA6121E265B28003118C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE8AA61B1E265B28003118C2 /* WindmillsAmsterdamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE8AA60D1E265B28003118C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE8AA5F61E265B28003118C2 /* WindmillsAmsterdam */;
+			targetProxy = BE8AA60C1E265B28003118C2 /* PBXContainerItemProxy */;
+		};
+		BE8AA6181E265B28003118C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE8AA5F61E265B28003118C2 /* WindmillsAmsterdam */;
+			targetProxy = BE8AA6171E265B28003118C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE8AA5FE1E265B28003118C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE8AA5FF1E265B28003118C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE8AA6031E265B28003118C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE8AA6041E265B28003118C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE8AA61D1E265B28003118C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE8AA61E1E265B28003118C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE8AA6201E265B28003118C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70CE6551A66EC058816F1D96 /* Pods-WindmillsAmsterdam.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = CWK29L7ZPT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
+				INFOPLIST_FILE = WindmillsAmsterdam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MyWonderfulApps.-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0feb466d-5963-45de-947b-5e3729a936eb";
+				PROVISIONING_PROFILE_SPECIFIER = AmsterdamWindmillsDEV;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BE8AA6211E265B28003118C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE1F8117699CC9268ED640C2 /* Pods-WindmillsAmsterdam.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = CWK29L7ZPT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
+				INFOPLIST_FILE = WindmillsAmsterdam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MyWonderfulApps.-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3084ad38-cc43-466c-8fbb-7f66d0d06fa5";
+				PROVISIONING_PROFILE_SPECIFIER = AmsterdamWindmills;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BE8AA6231E265B28003118C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WindmillsAmsterdamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.WindmillsAmsterdamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WindmillsAmsterdam.app/WindmillsAmsterdam";
+			};
+			name = Debug;
+		};
+		BE8AA6241E265B28003118C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WindmillsAmsterdamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.WindmillsAmsterdamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WindmillsAmsterdam.app/WindmillsAmsterdam";
+			};
+			name = Release;
+		};
+		BE8AA6261E265B28003118C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = WindmillsAmsterdamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.WindmillsAmsterdamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WindmillsAmsterdam;
+			};
+			name = Debug;
+		};
+		BE8AA6271E265B28003118C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = WindmillsAmsterdamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.WindmillsAmsterdamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WindmillsAmsterdam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE8AA5F21E265B28003118C2 /* Build configuration list for PBXProject "WindmillsAmsterdam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE8AA61D1E265B28003118C2 /* Debug */,
+				BE8AA61E1E265B28003118C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE8AA61F1E265B28003118C2 /* Build configuration list for PBXNativeTarget "WindmillsAmsterdam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE8AA6201E265B28003118C2 /* Debug */,
+				BE8AA6211E265B28003118C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE8AA6221E265B28003118C2 /* Build configuration list for PBXNativeTarget "WindmillsAmsterdamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE8AA6231E265B28003118C2 /* Debug */,
+				BE8AA6241E265B28003118C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE8AA6251E265B28003118C2 /* Build configuration list for PBXNativeTarget "WindmillsAmsterdamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE8AA6261E265B28003118C2 /* Debug */,
+				BE8AA6271E265B28003118C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE8AA5EF1E265B28003118C2 /* Project object */;
+}
