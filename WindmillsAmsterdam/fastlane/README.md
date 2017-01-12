@@ -6,18 +6,31 @@ sudo gem install fastlane
 ```
 # Available Actions
 ## iOS
-### ios beta
+### ios do_everything
 ```
-fastlane ios beta
+fastlane ios do_everything
 ```
-Submit a new Beta Build to Apple TestFlight
-
-This will also make sure the profile is up to date
-### ios release
+Provision, take screenshots, build and upload to App Store
+### ios screenshot
 ```
-fastlane ios release
+fastlane ios screenshot
+```
+Take screenshots
+### ios provision
+```
+fastlane ios provision
 ```
 Deploy a new version to the App Store
+### ios upload
+```
+fastlane ios upload
+```
+Upload to App Store
+### ios build
+```
+fastlane ios build
+```
+Create ipa
 
 ----
 

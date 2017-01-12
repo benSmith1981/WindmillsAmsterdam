@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import HockeySDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,10 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        BITHockeyManager.shared().configure(withIdentifier: "8330f2a5fc3646ef8a5b931a83772c4f")
-        // Do some additional configuration if needed here
-        BITHockeyManager.shared().start()
-        BITHockeyManager.shared().authenticator.authenticateInstallation()
+
         return true
     }
 

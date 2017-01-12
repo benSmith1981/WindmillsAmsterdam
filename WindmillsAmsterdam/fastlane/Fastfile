@@ -15,27 +15,26 @@ default_platform :ios
 # info which you can add here later
 platform :ios do
   
-  
   desc "Provision, take screenshots, build and upload to App Store"
   lane :do_everything do
-    # provision
-    # screenshot
+    provision
+    screenshot
     build
     upload
   end
   
   desc "Take screenshots"
   lane :screenshot do
-    snapshot
+    snapshot(scheme: "WindmillsAmsterdam") 
   end
   
   desc "Deploy a new version to the App Store"
   lane :provision do
     produce(
-      app_name: 'WindmillsAmsterdam',
+      app_name: 'EWindmills',
       language: 'English',
       app_version: '1.0',
-      sku: '123abc'
+      sku: '111a'
     )
     # cert to create a new private key and signing request, download and install the generated certificate and import all generated files in your keychain.
     cert
@@ -45,13 +44,18 @@ platform :ios do
   
   desc "Upload to App Store"
   lane :upload do
-    deliver
+    deliver(force: true)
   end
   
   desc "Create ipa"
   lane :build do
     increment_build_number
-    gym
+    gym(scheme: "WindmillsAmsterdam") # Build your app - more options available
+
+  end
+  
+  error do |lane, exception|
+  # This block is called if there was an error running a lane.
   end
   
 end

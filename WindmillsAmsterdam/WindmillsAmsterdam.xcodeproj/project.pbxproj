@@ -14,8 +14,6 @@
 		BE8AA6051E265B28003118C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8AA6031E265B28003118C2 /* LaunchScreen.storyboard */; };
 		BE8AA6101E265B28003118C2 /* WindmillsAmsterdamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AA60F1E265B28003118C2 /* WindmillsAmsterdamTests.swift */; };
 		BE8AA61B1E265B28003118C2 /* WindmillsAmsterdamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AA61A1E265B28003118C2 /* WindmillsAmsterdamUITests.swift */; };
-		BE8AA62C1E265DFF003118C2 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8AA62A1E265DFF003118C2 /* HockeySDK.framework */; };
-		BE8AA62D1E265DFF003118C2 /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE8AA62B1E265DFF003118C2 /* HockeySDKResources.bundle */; };
 		BE8AA6301E26C7FF003118C2 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AA62E1E26C7FF003118C2 /* SnapshotHelper.swift */; };
 		F3B408B47B1966BCC6451FF2 /* Pods_WindmillsAmsterdam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4EB76713F9CB65D40E432C /* Pods_WindmillsAmsterdam.framework */; };
 /* End PBXBuildFile section */
@@ -53,8 +51,6 @@
 		BE8AA6161E265B28003118C2 /* WindmillsAmsterdamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WindmillsAmsterdamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE8AA61A1E265B28003118C2 /* WindmillsAmsterdamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindmillsAmsterdamUITests.swift; sourceTree = "<group>"; };
 		BE8AA61C1E265B28003118C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE8AA62A1E265DFF003118C2 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
-		BE8AA62B1E265DFF003118C2 /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
 		BE8AA62E1E26C7FF003118C2 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		CE1F8117699CC9268ED640C2 /* Pods-WindmillsAmsterdam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindmillsAmsterdam.release.xcconfig"; path = "Pods/Target Support Files/Pods-WindmillsAmsterdam/Pods-WindmillsAmsterdam.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,7 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE8AA62C1E265DFF003118C2 /* HockeySDK.framework in Frameworks */,
 				F3B408B47B1966BCC6451FF2 /* Pods_WindmillsAmsterdam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,7 +93,6 @@
 		4E8E0B4F422C9542D6AC1B42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BE8AA6291E265DFF003118C2 /* HockeySDK.embeddedframework */,
 				1E4EB76713F9CB65D40E432C /* Pods_WindmillsAmsterdam.framework */,
 			);
 			name = Frameworks;
@@ -156,16 +150,6 @@
 				BE8AA61C1E265B28003118C2 /* Info.plist */,
 			);
 			path = WindmillsAmsterdamUITests;
-			sourceTree = "<group>";
-		};
-		BE8AA6291E265DFF003118C2 /* HockeySDK.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				BE8AA62A1E265DFF003118C2 /* HockeySDK.framework */,
-				BE8AA62B1E265DFF003118C2 /* HockeySDKResources.bundle */,
-			);
-			name = HockeySDK.embeddedframework;
-			path = "HockeySDK-iOS/HockeySDK.embeddedframework";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +265,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE8AA6051E265B28003118C2 /* LaunchScreen.storyboard in Resources */,
-				BE8AA62D1E265DFF003118C2 /* HockeySDKResources.bundle in Resources */,
 				BE8AA6021E265B28003118C2 /* Assets.xcassets in Resources */,
 				BE8AA6001E265B28003118C2 /* Main.storyboard in Resources */,
 			);
@@ -345,7 +328,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+			shellScript = "";
 		};
 		BEE234B2B10812184C3C4B77 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -527,7 +510,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = CWK29L7ZPT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -535,7 +518,7 @@
 				);
 				INFOPLIST_FILE = WindmillsAmsterdam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MyWonderfulApps.-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MyWonderfulApps.EWindmills;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0feb466d-5963-45de-947b-5e3729a936eb";
 				PROVISIONING_PROFILE_SPECIFIER = AmsterdamWindmillsDEV;
@@ -550,7 +533,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = CWK29L7ZPT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -558,7 +541,7 @@
 				);
 				INFOPLIST_FILE = WindmillsAmsterdam/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MyWonderfulApps.-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MyWonderfulApps.EWindmills;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "62f01ad6-a2b2-4d01-955e-34020a249dcc";
 				PROVISIONING_PROFILE_SPECIFIER = "AmsterdamWindmills-Appstore";

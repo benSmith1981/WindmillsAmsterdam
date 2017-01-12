@@ -5,24 +5,67 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.001041">
+      <testcase classname="fastlane.lanes" name="00: Verifying required fastlane version" time="0.002607">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.000571">
+      <testcase classname="fastlane.lanes" name="01: default_platform" time="0.000571">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: gym" time="71.870854">
+      <testcase classname="fastlane.lanes" name="02: Switch to ios provision lane" time="0.000654">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: deliver" time="27.135419">
+      <testcase classname="fastlane.lanes" name="03: produce" time="98.576444">
         
-          <failure message="/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/fastlane/lib/fastlane/actions/actions_helper.rb:48:in `execute_action'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/fastlane/lib/fastlane/runner.rb:217:in `block in execute_action'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/fastlane/lib/fastlane/runner.rb:213:in `chdir'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/fastlane/lib/fastlane/runner.rb:213:in `execute_action'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/fastlane/lib/fastlane/runner.rb:135:in `trigger_action_by_name'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/fastlane/lib/fastlane/fast_file.rb:146:in `method_missing'&#10;Fastfile:35:in `block (2 levels) in parsing_binding'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/fastlane/lib/fastlane/lane_manager.rb:52:in `cruise_lane'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/fastlane/lib/fastlane/command_line_handler.rb:30:in `handle'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/fastlane/lib/fastlane/commands_generator.rb:96:in `block (2 levels) in run'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/command.rb:178:in `call'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/command.rb:178:in `call'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/command.rb:153:in `run'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/runner.rb:446:in `run_active_command'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:38:in `run!'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/commander-4.4.3/lib/commander/delegates.rb:15:in `run!'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/fastlane/lib/fastlane/commands_generator.rb:293:in `run'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/fastlane/lib/fastlane/commands_generator.rb:36:in `start'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/fastlane/lib/fastlane/cli_tools_distributor.rb:59:in `take_off'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/lib/ruby/gems/2.2.0/gems/fastlane-2.7.0/bin/fastlane:15:in `&lt;top (required)&gt;'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/bin/fastlane:22:in `load'&#10;/Users/funkymonkey1981/.fastlane/bin/bundle/bin/fastlane:22:in `&lt;main&gt;'&#10;&#10;Could not find app with app identifier 'com.MyWonderfulApps.-' in your iTunes Connect account (funkymonkey1981@hotmail.com - Team: 301685)" />
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="04: cert" time="45.241472">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="05: sigh" time="14.664096">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="06: Switch to ios screenshot lane" time="0.005972">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="07: snapshot" time="388.843542">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="08: Switch to ios build lane" time="0.000817">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="09: increment_build_number" time="3.493861">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: gym" time="129.571036">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="11: Switch to ios upload lane" time="0.000975">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="12: deliver" time="209.28984">
         
       </testcase>
     
