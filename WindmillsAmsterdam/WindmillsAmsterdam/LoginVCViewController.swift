@@ -13,6 +13,7 @@ class LoginVCViewController: UIViewController {
     @IBOutlet weak var emailField: UILabel!
     @IBOutlet weak var passwordField: UILabel!
 
+    
     override func viewDidAppear(_ animated: Bool) {
         if let user = FIRAuth.auth()?.currentUser {
             self.signedIn(user)
@@ -26,6 +27,8 @@ class LoginVCViewController: UIViewController {
             if let error = error {
                 print(error.localizedDescription)
                 return
+            } else {
+                self.performSegue(withIdentifier: Constants.Segues.SignInToFp, sender: self)
             }
             self.signedIn(user!)
         }
@@ -36,6 +39,8 @@ class LoginVCViewController: UIViewController {
             if let error = error {
                 print(error.localizedDescription)
                 return
+            } else {
+                self.performSegue(withIdentifier: Constants.Segues.SignUpToFp, sender: self)
             }
             self.setDisplayName(user!)
         }
@@ -80,7 +85,7 @@ class LoginVCViewController: UIViewController {
         AppState.sharedInstance.signedIn = true
         let notificationName = Notification.Name(rawValue: Constants.NotificationKeys.SignedIn)
         NotificationCenter.default.post(name: notificationName, object: nil, userInfo: nil)
-        performSegue(withIdentifier: Constants.Segues.SignInToFp, sender: nil)
+//        performSegue(withIdentifier: Constants.Segues.SignInToFp, sender: nil)
     }
 
     @IBAction func signOut(_ sender: UIButton) {
@@ -93,4 +98,20 @@ class LoginVCViewController: UIViewController {
             print ("Error signing out: \(signOutError.localizedDescription)")
         }
     }
+    
+    //MARK: Navigation, Segue
+    func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        //return false so we can load our detail data before pushing segue
+        return false
+    }
+    
+    //MARK: Navigation, Segue
+    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?){
+        
+        if (segue.identifier == Constants.Segues.SignUpToFp) {
+            
+            
+        }
+    }
+    
 }

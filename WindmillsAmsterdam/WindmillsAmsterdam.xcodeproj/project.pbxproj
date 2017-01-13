@@ -17,6 +17,7 @@
 		BE399BB01E28F4A3006E66D9 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE399BAE1E28F4A3006E66D9 /* AppState.swift */; };
 		BE399BB11E28F4A3006E66D9 /* MeasurementHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE399BAF1E28F4A3006E66D9 /* MeasurementHelper.swift */; };
 		BE399BB31E28F4BB006E66D9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE399BB21E28F4BB006E66D9 /* Constants.swift */; };
+		BE399BB81E291CB1006E66D9 /* Windmills.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE399BB71E291CB1006E66D9 /* Windmills.swift */; };
 		BE8AA5FB1E265B28003118C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AA5FA1E265B28003118C2 /* AppDelegate.swift */; };
 		BE8AA5FD1E265B28003118C2 /* TabBarMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8AA5FC1E265B28003118C2 /* TabBarMain.swift */; };
 		BE8AA6001E265B28003118C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE8AA5FE1E265B28003118C2 /* Main.storyboard */; };
@@ -69,6 +70,7 @@
 		BE399BAE1E28F4A3006E66D9 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		BE399BAF1E28F4A3006E66D9 /* MeasurementHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementHelper.swift; sourceTree = "<group>"; };
 		BE399BB21E28F4BB006E66D9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BE399BB71E291CB1006E66D9 /* Windmills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Windmills.swift; sourceTree = "<group>"; };
 		BE8AA5F71E265B28003118C2 /* WindmillsAmsterdam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WindmillsAmsterdam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE8AA5FA1E265B28003118C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE8AA5FC1E265B28003118C2 /* TabBarMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMain.swift; sourceTree = "<group>"; };
@@ -126,6 +128,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BE399BB91E291CB9006E66D9 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BE399BAA1E28E32B006E66D9 /* GoogleService-Info.plist */,
+				BE399B9A1E27C890006E66D9 /* Localizable.strings */,
+				BE8AA6061E265B28003118C2 /* Info.plist */,
+				BE399BAE1E28F4A3006E66D9 /* AppState.swift */,
+				BE399BAF1E28F4A3006E66D9 /* MeasurementHelper.swift */,
+				BE399BB21E28F4BB006E66D9 /* Constants.swift */,
+				BE8AA5FE1E265B28003118C2 /* Main.storyboard */,
+				BE8AA6011E265B28003118C2 /* Assets.xcassets */,
+				BE8AA6031E265B28003118C2 /* LaunchScreen.storyboard */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		BE399BBA1E291CD1006E66D9 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				BE399BB71E291CB1006E66D9 /* Windmills.swift */,
+			);
+			name = DataLayer;
+			sourceTree = "<group>";
+		};
 		BE8AA5EE1E265B28003118C2 = {
 			isa = PBXGroup;
 			children = (
@@ -151,20 +177,13 @@
 		BE8AA5F91E265B28003118C2 /* WindmillsAmsterdam */ = {
 			isa = PBXGroup;
 			children = (
-				BE399BAA1E28E32B006E66D9 /* GoogleService-Info.plist */,
-				BE399B9A1E27C890006E66D9 /* Localizable.strings */,
+				BE399BBA1E291CD1006E66D9 /* DataLayer */,
 				BE8AA5FA1E265B28003118C2 /* AppDelegate.swift */,
 				BE8AA5FC1E265B28003118C2 /* TabBarMain.swift */,
 				BE399BA21E27EBBB006E66D9 /* WindmillTableView.swift */,
 				BE399BA01E27EB5B006E66D9 /* MapViewController.swift */,
 				BE399BA81E282CDC006E66D9 /* LoginVCViewController.swift */,
-				BE399BAE1E28F4A3006E66D9 /* AppState.swift */,
-				BE399BAF1E28F4A3006E66D9 /* MeasurementHelper.swift */,
-				BE399BB21E28F4BB006E66D9 /* Constants.swift */,
-				BE8AA5FE1E265B28003118C2 /* Main.storyboard */,
-				BE8AA6011E265B28003118C2 /* Assets.xcassets */,
-				BE8AA6031E265B28003118C2 /* LaunchScreen.storyboard */,
-				BE8AA6061E265B28003118C2 /* Info.plist */,
+				BE399BB91E291CB9006E66D9 /* SupportingFiles */,
 			);
 			path = WindmillsAmsterdam;
 			sourceTree = "<group>";
@@ -500,6 +519,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE399BB81E291CB1006E66D9 /* Windmills.swift in Sources */,
 				BE399BA91E282CDC006E66D9 /* LoginVCViewController.swift in Sources */,
 				BE8AA5FD1E265B28003118C2 /* TabBarMain.swift in Sources */,
 				BE399BB11E28F4A3006E66D9 /* MeasurementHelper.swift in Sources */,
