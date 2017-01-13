@@ -1,11 +1,15 @@
 # Uncomment this line to define a global platform for your project
-platform :ios, '8.0'
+# platform :ios, '8.0'
 # Uncomment this line if you're using Swift
 use_frameworks!
 
 target 'WindmillsAmsterdam' do
-	pod 'Firebase'
-	pod 'GoogleMaps'
+
+    # Firebase stuff
+    pod 'Firebase/Auth'
+    pod 'Firebase/Database'
+    pod 'GoogleMaps'
+    pod 'AGi18n'
 end
 
 target 'WindmillsAmsterdamTests' do

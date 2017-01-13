@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  
+
+  Created by Ben Smith on 12/01/17.
+
+*/
+"firstscreen.buttonlabel" = "press me";
+"login" = "login";
+"username" = "Username";
+"password" = "Password";
