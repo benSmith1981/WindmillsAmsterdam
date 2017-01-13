@@ -50,6 +50,16 @@
                                 <frame key="frameInset" width="375" height="618"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClientCell" id="tUC-eQ-bbc">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tUC-eQ-bbc" id="TOP-Xf-s7r">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="dJ9-iE-PeR" id="3ND-xA-daN"/>
                                     <outlet property="delegate" destination="dJ9-iE-PeR" id="PJX-jv-GbD"/>
@@ -59,6 +69,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="U5Y-gb-7IC"/>
+                    <connections>
+                        <outlet property="clientTable" destination="GCo-ZK-eq6" id="raM-TG-XtM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aNm-Q8-7wi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,14 +89,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgG-3S-nWR">
-                                <frame key="frameInset" minX="119" minY="212" width="136" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="test@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgG-3S-nWR">
+                                <frame key="frameInset" minX="126" minY="212" width="123" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdW-k0-Ouz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1212sd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdW-k0-Ouz">
                                 <frame key="frameInset" minX="128" minY="268" width="119" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -97,7 +110,17 @@
                                 <state key="normal" title="login"/>
                                 <connections>
                                     <action selector="didTapSignIn:" destination="ypi-nf-dcu" eventType="touchUpInside" id="VZP-US-x8y"/>
-                                    <segue destination="IFc-u2-kKg" kind="show" id="WLg-mq-fj6"/>
+                                    <segue destination="IFc-u2-kKg" kind="show" identifier="SignInToFP" id="Rbd-Bc-q0f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPa-vC-OUW">
+                                <frame key="frameInset" minX="144" minY="363" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="signup"/>
+                                <connections>
+                                    <action selector="didTapSignUp:" destination="ypi-nf-dcu" eventType="touchUpInside" id="TsV-l6-qx4"/>
+                                    <segue destination="IFc-u2-kKg" kind="show" identifier="SignUpToFp" id="wp1-Ca-LKG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -131,4 +154,7 @@
             <point key="canvasLocation" x="-1052" y="-537"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="wp1-Ca-LKG"/>
+    </inferredMetricsTieBreakers>
 </document>
