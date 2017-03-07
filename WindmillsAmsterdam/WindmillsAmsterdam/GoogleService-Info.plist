@@ -7,34 +7,34 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>352634853187-cfv3dqr19bn4shdk2ir6d23knjtqmhhl.apps.googleusercontent.com</string>
+	<string>950186901166-2pii2go9du95de786p3ecuhe9p3kgn3v.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.352634853187-cfv3dqr19bn4shdk2ir6d23knjtqmhhl</string>
+	<string>com.googleusercontent.apps.950186901166-2pii2go9du95de786p3ecuhe9p3kgn3v</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAOVcSgLsCHbBapROyIvVNsLXJDgNyQBnU</string>
+	<string>AIzaSyB42F6NH0Qr8c3XnCDT2fepfxzBBRHFsrg</string>
 	<key>GCM_SENDER_ID</key>
-	<string>352634853187</string>
+	<string>950186901166</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.MyWonderfulApps.EWindmills</string>
 	<key>PROJECT_ID</key>
-	<string>amsterdamwind-fc2e0</string>
+	<string>windmills-5408b</string>
 	<key>STORAGE_BUCKET</key>
-	<string>amsterdamwind-fc2e0.appspot.com</string>
+	<string>windmills-5408b.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
 	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<false/>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
 	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:352634853187:ios:0827e201803fba7a</string>
+	<string>1:950186901166:ios:0827e201803fba7a</string>
 	<key>DATABASE_URL</key>
-	<string>https://amsterdamwind-fc2e0.firebaseio.com</string>
+	<string>https://windmills-5408b.firebaseio.com</string>
 </dict>
 </plist>

@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		56178468F01E8677ACDE62B5 /* Pods_WindmillsAmsterdamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0852AA29FFD85092C624AC23 /* Pods_WindmillsAmsterdamUITests.framework */; };
+		BE27C2891E66CB4300651CDF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE27C2881E66CB4300651CDF /* GoogleService-Info.plist */; };
 		BE399B981E27C890006E66D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE399B9A1E27C890006E66D9 /* Localizable.strings */; };
 		BE399BA11E27EB5B006E66D9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE399BA01E27EB5B006E66D9 /* MapViewController.swift */; };
 		BE399BA31E27EBBB006E66D9 /* WindmillTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE399BA21E27EBBB006E66D9 /* WindmillTableView.swift */; };
 		BE399BA91E282CDC006E66D9 /* LoginVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE399BA81E282CDC006E66D9 /* LoginVCViewController.swift */; };
-		BE399BAB1E28E32B006E66D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE399BAA1E28E32B006E66D9 /* GoogleService-Info.plist */; };
 		BE399BAD1E28E961006E66D9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE399BAC1E28E961006E66D9 /* MapKit.framework */; };
 		BE399BB01E28F4A3006E66D9 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE399BAE1E28F4A3006E66D9 /* AppState.swift */; };
 		BE399BB11E28F4A3006E66D9 /* MeasurementHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE399BAF1E28F4A3006E66D9 /* MeasurementHelper.swift */; };
@@ -55,6 +55,7 @@
 		692F0836853E3771553A945E /* Pods-WindmillsAmsterdam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindmillsAmsterdam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WindmillsAmsterdam/Pods-WindmillsAmsterdam.debug.xcconfig"; sourceTree = "<group>"; };
 		A9A0CD42B063CE365D8A9F68 /* Pods-WindmillsAmsterdam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindmillsAmsterdam.release.xcconfig"; path = "Pods/Target Support Files/Pods-WindmillsAmsterdam/Pods-WindmillsAmsterdam.release.xcconfig"; sourceTree = "<group>"; };
 		BC7CE91DE6853A3ADA8A026E /* Pods-WindmillsAmsterdamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindmillsAmsterdamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WindmillsAmsterdamTests/Pods-WindmillsAmsterdamTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE27C2881E66CB4300651CDF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE399B941E27BFC4006E66D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		BE399B951E27BFC4006E66D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		BE399B9B1E27C89D006E66D9 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		BE399BA01E27EB5B006E66D9 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		BE399BA21E27EBBB006E66D9 /* WindmillTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindmillTableView.swift; sourceTree = "<group>"; };
 		BE399BA81E282CDC006E66D9 /* LoginVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVCViewController.swift; sourceTree = "<group>"; };
-		BE399BAA1E28E32B006E66D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE399BAC1E28E961006E66D9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BE399BAE1E28F4A3006E66D9 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		BE399BAF1E28F4A3006E66D9 /* MeasurementHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementHelper.swift; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 		BE8AA5F91E265B28003118C2 /* WindmillsAmsterdam */ = {
 			isa = PBXGroup;
 			children = (
-				BE399BAA1E28E32B006E66D9 /* GoogleService-Info.plist */,
+				BE27C2881E66CB4300651CDF /* GoogleService-Info.plist */,
 				BE399B9A1E27C890006E66D9 /* Localizable.strings */,
 				BE8AA5FA1E265B28003118C2 /* AppDelegate.swift */,
 				BE8AA5FC1E265B28003118C2 /* TabBarMain.swift */,
@@ -279,8 +279,7 @@
 				TargetAttributes = {
 					BE8AA5F61E265B28003118C2 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = CWK29L7ZPT;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					BE8AA60A1E265B28003118C2 = {
 						CreatedOnToolsVersion = 8.0;
@@ -321,8 +320,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE8AA6051E265B28003118C2 /* LaunchScreen.storyboard in Resources */,
+				BE27C2891E66CB4300651CDF /* GoogleService-Info.plist in Resources */,
 				BE399B981E27C890006E66D9 /* Localizable.strings in Resources */,
-				BE399BAB1E28E32B006E66D9 /* GoogleService-Info.plist in Resources */,
 				BE8AA6021E265B28003118C2 /* Assets.xcassets in Resources */,
 				BE8AA6001E265B28003118C2 /* Main.storyboard in Resources */,
 			);
@@ -680,7 +679,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 11;
-				DEVELOPMENT_TEAM = CWK29L7ZPT;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
@@ -689,8 +688,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyWonderfulApps.EWindmills;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0feb466d-5963-45de-947b-5e3729a936eb";
-				PROVISIONING_PROFILE_SPECIFIER = AmsterdamWindmillsDEV;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -701,9 +700,9 @@
 			baseConfigurationReference = A9A0CD42B063CE365D8A9F68 /* Pods-WindmillsAmsterdam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 11;
-				DEVELOPMENT_TEAM = CWK29L7ZPT;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
@@ -712,8 +711,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyWonderfulApps.EWindmills;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "62f01ad6-a2b2-4d01-955e-34020a249dcc";
-				PROVISIONING_PROFILE_SPECIFIER = "AmsterdamWindmills-Appstore";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
