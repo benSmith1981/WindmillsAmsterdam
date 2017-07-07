@@ -15,20 +15,28 @@ class WindmillsAmsterdamUITests: XCTestCase {
         let app = XCUIApplication()
 //        setupSnapshot(app)
         app.launch()
-        
         // 2
         let chipCountTextField = app.textFields["usernamefield"]
         chipCountTextField.tap()
-        chipCountTextField.typeText("10")
+        chipCountTextField.typeText("b@test.com")
         // 3
         let bigBlindTextField = app.textFields["passwordfield"]
         bigBlindTextField.tap()
-        bigBlindTextField.typeText("100")
+        bigBlindTextField.typeText("123456")
         // 4
 //        snapshot("01UserEntries")
         // 5
         app.buttons["loginbutton"].tap()
 //        snapshot("02Suggestion")
+        XCTAssertEqual(app.windows.element.identifier, "mapviewscreen")
+
     }
     
+    func testAllScreenNavigation() {
+        
+        let app = XCUIApplication()
+        app.tabBars.buttons["Home"].tap()
+        app.navigationBars["Home"].buttons["More"].tap()
+//        app.sheets.buttons["Cancel"].tap()
+    }
 }

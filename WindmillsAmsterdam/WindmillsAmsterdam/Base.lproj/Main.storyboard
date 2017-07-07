@@ -12,7 +12,7 @@
         <!--Item 2-->
         <scene sceneID="TPx-Mk-Z5e">
             <objects>
-                <viewController id="NnM-Y7-rZs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapviewscreen" id="NnM-Y7-rZs" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9om-nK-4xw"/>
                         <viewControllerLayoutGuide type="bottom" id="zxN-4W-wxS"/>
@@ -113,8 +113,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="emailField" destination="bgG-3S-nWR" id="2ve-FY-fjX"/>
-                        <outlet property="passwordField" destination="jdW-k0-Ouz" id="EWf-IG-raw"/>
+                        <outlet property="emailField" destination="fcj-MS-92l" id="bwG-W9-g8r"/>
+                        <outlet property="passwordField" destination="uV1-Qs-knF" id="R08-dv-H1A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9XI-wG-gSE" userLabel="First Responder" sceneMemberID="firstResponder"/>

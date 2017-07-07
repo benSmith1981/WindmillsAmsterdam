@@ -10,8 +10,8 @@ import UIKit
 import Firebase
 
 class LoginVCViewController: UIViewController {
-    @IBOutlet weak var emailField: UILabel!
-    @IBOutlet weak var passwordField: UILabel!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
 
     override func viewDidAppear(_ animated: Bool) {
         if let user = FIRAuth.auth()?.currentUser {
