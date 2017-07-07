@@ -13,10 +13,16 @@ class LoginVCViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
 
+    override func viewDidLoad() {
+        self.view.accessibilityIdentifier = "loginview"
+
+    }
     override func viewDidAppear(_ animated: Bool) {
-        if let user = FIRAuth.auth()?.currentUser {
-            self.signedIn(user)
-        }
+        //setup accessibiliy label on your view
+        
+//        if let user = FIRAuth.auth()?.currentUser {
+//            self.signedIn(user)
+//        }
     }
     
     @IBAction func didTapSignIn(_ sender: AnyObject) {

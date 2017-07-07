@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		56178468F01E8677ACDE62B5 /* Pods_WindmillsAmsterdamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0852AA29FFD85092C624AC23 /* Pods_WindmillsAmsterdamUITests.framework */; };
+		B5F501491F0FE515005C1FE9 /* WindmillsAmsterdamUITests+Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F501481F0FE515005C1FE9 /* WindmillsAmsterdamUITests+Onboarding.swift */; };
 		BE27C2891E66CB4300651CDF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE27C2881E66CB4300651CDF /* GoogleService-Info.plist */; };
 		BE399B981E27C890006E66D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE399B9A1E27C890006E66D9 /* Localizable.strings */; };
 		BE399BA11E27EB5B006E66D9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE399BA01E27EB5B006E66D9 /* MapViewController.swift */; };
@@ -54,6 +55,7 @@
 		62E4FE1A47490DA5DD8F0774 /* Pods-WindmillsAmsterdamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindmillsAmsterdamUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WindmillsAmsterdamUITests/Pods-WindmillsAmsterdamUITests.release.xcconfig"; sourceTree = "<group>"; };
 		692F0836853E3771553A945E /* Pods-WindmillsAmsterdam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindmillsAmsterdam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WindmillsAmsterdam/Pods-WindmillsAmsterdam.debug.xcconfig"; sourceTree = "<group>"; };
 		A9A0CD42B063CE365D8A9F68 /* Pods-WindmillsAmsterdam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindmillsAmsterdam.release.xcconfig"; path = "Pods/Target Support Files/Pods-WindmillsAmsterdam/Pods-WindmillsAmsterdam.release.xcconfig"; sourceTree = "<group>"; };
+		B5F501481F0FE515005C1FE9 /* WindmillsAmsterdamUITests+Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WindmillsAmsterdamUITests+Onboarding.swift"; sourceTree = "<group>"; };
 		BC7CE91DE6853A3ADA8A026E /* Pods-WindmillsAmsterdamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindmillsAmsterdamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WindmillsAmsterdamTests/Pods-WindmillsAmsterdamTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BE27C2881E66CB4300651CDF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE399B941E27BFC4006E66D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -152,15 +154,15 @@
 			isa = PBXGroup;
 			children = (
 				BE27C2881E66CB4300651CDF /* GoogleService-Info.plist */,
-				BE399B9A1E27C890006E66D9 /* Localizable.strings */,
+				BE399BA81E282CDC006E66D9 /* LoginVCViewController.swift */,
 				BE8AA5FA1E265B28003118C2 /* AppDelegate.swift */,
 				BE8AA5FC1E265B28003118C2 /* TabBarMain.swift */,
 				BE399BA21E27EBBB006E66D9 /* WindmillTableView.swift */,
 				BE399BA01E27EB5B006E66D9 /* MapViewController.swift */,
-				BE399BA81E282CDC006E66D9 /* LoginVCViewController.swift */,
 				BE399BAE1E28F4A3006E66D9 /* AppState.swift */,
 				BE399BAF1E28F4A3006E66D9 /* MeasurementHelper.swift */,
 				BE399BB21E28F4BB006E66D9 /* Constants.swift */,
+				BE399B9A1E27C890006E66D9 /* Localizable.strings */,
 				BE8AA5FE1E265B28003118C2 /* Main.storyboard */,
 				BE8AA6011E265B28003118C2 /* Assets.xcassets */,
 				BE8AA6031E265B28003118C2 /* LaunchScreen.storyboard */,
@@ -183,6 +185,7 @@
 			children = (
 				BE8AA62E1E26C7FF003118C2 /* SnapshotHelper.swift */,
 				BE8AA61A1E265B28003118C2 /* WindmillsAmsterdamUITests.swift */,
+				B5F501481F0FE515005C1FE9 /* WindmillsAmsterdamUITests+Onboarding.swift */,
 				BE8AA61C1E265B28003118C2 /* Info.plist */,
 			);
 			path = WindmillsAmsterdamUITests;
@@ -522,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F501491F0FE515005C1FE9 /* WindmillsAmsterdamUITests+Onboarding.swift in Sources */,
 				BE8AA61B1E265B28003118C2 /* WindmillsAmsterdamUITests.swift in Sources */,
 				BE8AA6301E26C7FF003118C2 /* SnapshotHelper.swift in Sources */,
 			);

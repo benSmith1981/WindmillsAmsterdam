@@ -9,17 +9,22 @@
 import UIKit
 import Firebase
 
-class WindmillTableView: UIViewController {
-
-
+class WindmillTableView: UITableViewController {
 
     var clientTable: UITableView!
     var ref: FIRDatabaseReference!
+    var messages: [FIRDataSnapshot] = [] {
+        didSet{
+            self.tableView.reloadData()
+        }
+    }
     fileprivate var _refHandle: FIRDatabaseHandle!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configureDatabase()
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "tableviewcellid")
+        view.accessibilityIdentifier = "tableview"
         // Do any additional setup after loading the view.
     }
 
@@ -27,31 +32,31 @@ class WindmillTableView: UIViewController {
         self.ref.child("messages").removeObserver(withHandle: _refHandle)
     }
     
-    @available(iOS 2.0, *)
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return messages.count
     }
     
     func configureDatabase() {
         ref = FIRDatabase.database().reference()
         // Listen for new messages in the Firebase database
-        _refHandle = self.ref.child("messages").observe(.childAdded, with: { [weak self] (snapshot) -> Void in
+        _refHandle = self.ref.child("ShoppingItems").observe(.childAdded, with: { [weak self] (snapshot) -> Void in
             guard let strongSelf = self else { return }
-//            strongSelf.messages.append(snapshot)
-//            strongSelf.clientTable.insertRows(at: [IndexPath(row: strongSelf.messages.count-1, section: 0)], with: .automatic)
-//            })
+            strongSelf.messages.append(snapshot)
+            //strongSelf.tableView.insertRows(at: [IndexPath(row: strongSelf.messages.count-1, section: 0)], with: .automatic)
         })
+        
+
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Dequeue cell
-        let cell = self.clientTable .dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath)
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "tableviewcellid", for: indexPath)
         // Unpack message from Firebase DataSnapshot
-//        let messageSnapshot: FIRDataSnapshot! = self.messages[indexPath.row]
-//        let message = messageSnapshot.value as! Dictionary<String, String>
-//        let name = message[Constants.MessageFields.name] as String!
-//        let text = message[Constants.MessageFields.text] as String!
-//        cell.textLabel?.text = name! + ": " + text!
+        let messageSnapshot: FIRDataSnapshot! = self.messages[indexPath.row]
+        let message = messageSnapshot.value as! Dictionary<String, AnyObject>
+        let name = message[Constants.MessageFields.name] as! String!
+        let text = message[Constants.MessageFields.price] as! Int!
+        cell.textLabel?.text = name! + ": \(text)"
 //        cell.imageView?.image = UIImage(named: "ic_account_circle")
 //        if let photoURL = message[Constants.MessageFields.photoURL], let URL = URL(string: photoURL), let data = try? Data(contentsOf: URL) {
 //            cell.imageView?.image = UIImage(data: data)
