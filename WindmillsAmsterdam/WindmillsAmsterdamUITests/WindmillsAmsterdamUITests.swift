@@ -31,16 +31,16 @@ class WindmillsAmsterdamUITests: XCTestCase {
         //checsk the accessibility tags and tries to find on with this label
         // You can also set an accessibility tag like this, jsut change VIEW to the element you want to set:
         //  self.view.accessibilityIdentifier = "loginview"
-        let chipCountTextField = app.textFields["usernamefield"]
-        chipCountTextField.tap()
+        let usernameTextField = app.textFields["usernamefield"]
+        usernameTextField.tap()
         //write in username
-        chipCountTextField.typeText("b@test.com")
+        usernameTextField.typeText("b@test.com")
         
         //look got textfield with this ID
-        let bigBlindTextField = app.textFields["passwordfield"]
-        bigBlindTextField.tap()
+        let passwordTextField = app.textFields["passwordfield"]
+        passwordTextField.tap()
         // Writes in password field
-        bigBlindTextField.typeText("123456")
+        passwordTextField.typeText("123456")
 
         app.buttons["loginbutton"].tap()
         //if login was successful then the logged in view should show
