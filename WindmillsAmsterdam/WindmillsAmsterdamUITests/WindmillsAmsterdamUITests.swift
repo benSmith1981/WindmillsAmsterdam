@@ -13,22 +13,22 @@ class WindmillsAmsterdamUITests: XCTestCase {
     func testExample() {
         // 1
         let app = XCUIApplication()
-        setupSnapshot(app)
+//        setupSnapshot(app)
         app.launch()
         
         // 2
-        let chipCountTextField = app.textFields["chip count"]
+        let chipCountTextField = app.textFields["usernamefield"]
         chipCountTextField.tap()
         chipCountTextField.typeText("10")
         // 3
-        let bigBlindTextField = app.textFields["big blind"]
+        let bigBlindTextField = app.textFields["passwordfield"]
         bigBlindTextField.tap()
         bigBlindTextField.typeText("100")
         // 4
-        snapshot("01UserEntries")
+//        snapshot("01UserEntries")
         // 5
-        app.buttons["what should i do"].tap()
-        snapshot("02Suggestion")
+        app.buttons["loginbutton"].tap()
+//        snapshot("02Suggestion")
     }
     
 }
